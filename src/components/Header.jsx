@@ -1,13 +1,25 @@
 "use client"
 import React, {useState} from 'react';
 import Link from "next/link";
-import {IoIosNotificationsOutline} from "react-icons/io";
+import {IoIosHome, IoIosNotificationsOutline} from "react-icons/io";
 import {CiMenuBurger, CiSettings} from "react-icons/ci";
 import {RiCloseLine} from "react-icons/ri";
+import {usePathname} from "next/navigation";
+
+
+const navLinks = [
+    {name: "Home", icon: <IoIosHome/>, href: "/"},
+    {name: "Orders", icon: <IoIosNotificationsOutline/>, href: "/orders"},
+    {name: "Customers", icon: <IoIosNotificationsOutline/>, href: "/customers"},
+    {name: "Products", icon: <IoIosNotificationsOutline/>, href: "/products"},
+]
 
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false);
+
+    const pathName = usePathname();
+
     return (
         <nav className="w-full py-3 px-4 mx-auto  flex items-center bg-stone-900 justify-between ">
             <Link href="/"><span
@@ -16,24 +28,21 @@ const Header = () => {
             <button className='text-xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer md:hidden '
                     onClick={() => setIsOpen(!isOpen)}
             >
-                {isOpen ?
-                    (<Link href={"/"}>
-                        <CiMenuBurger/>
-                    </Link>)
-
-                    : (<Link href={"/"}>
-                        <RiCloseLine/>
-                    </Link>)
+                {isOpen ? (<Link href={"/"}>
+                    <RiCloseLine/>
+                </Link>) : (<Link href={"/"}>
+                    <CiMenuBurger/>
+                </Link>)
                 }
-
             </button>
 
 
             <div className=" items-center gap-10  justify-between  hidden md:flex">
-                <Link className="hover:text-gray-600 transition-colors " href={"/"}>Home</Link>
-                <Link className="hover:text-gray-600 transition-colors " href={"/orders"}>Orders</Link>
-                <Link className="hover:text-gray-600 transition-colors " href={"/customers"}>Customers</Link>
-                <Link className="hover:text-gray-600 transition-colors " href={"/products"}>Products</Link>
+                {navLinks.map((link, index) => (
+                    <Link href={link.href} key={index} className="hover:text-gray-600 transition-colors ">
+                        {link.name}
+                    </Link>
+                ))}
             </div>
 
 
