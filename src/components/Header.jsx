@@ -1,20 +1,31 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 import Link from "next/link";
 import {IoIosNotificationsOutline} from "react-icons/io";
 import {CiMenuBurger, CiSettings} from "react-icons/ci";
+import {RiCloseLine} from "react-icons/ri";
 
 
 const Header = () => {
-
+    const [isOpen, setIsOpen] = useState(true)
     return (
         <nav className="w-full py-3 px-4 mx-auto  flex items-center bg-stone-900 justify-between ">
             <Link href="/"><span
                 className="font-bold text-xl italic bg-stone-700 py-2 px-4 rounded-2xl">Agha</span></Link>
 
-            <button className='text-xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer md:hidden '>
-                <Link href={"/"}>
-                    <CiMenuBurger/>
-                </Link>
+            <button className='text-xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer md:hidden '
+                    onClick={() => setIsOpen(!isOpen)}
+            >
+                {isOpen ?
+                    (<Link href={"/"}>
+                        <CiMenuBurger/>
+                    </Link>)
+
+                    : (<Link href={"/"}>
+                        <RiCloseLine/>
+                    </Link>)
+                }
+
             </button>
 
 
