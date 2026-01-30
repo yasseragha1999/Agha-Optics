@@ -7,20 +7,18 @@ import {RiCloseLine} from "react-icons/ri";
 import {usePathname} from "next/navigation";
 
 
-const navLinks = [
-    {name: "Home", href: "/"},
-    {name: "Orders", href: "/orders"},
-    {name: "Customers", href: "/customers"},
-    {name: "Products", href: "/products"}]
+const navLinks = [{name: "Home", href: "/"}, {name: "Orders", href: "/orders"}, {
+    name: "Customers",
+    href: "/customers"
+}, {name: "Products", href: "/products"}]
 
 
-const Header = () => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathName = usePathname();
     console.log(pathName);
 
-    return (
-
+    return (<>
         <nav className="w-full py-3 px-4 mx-auto  flex items-center bg-stone-900 justify-between ">
 
 
@@ -39,27 +37,23 @@ const Header = () => {
 
             {/*links */}
             <div className="items-center gap-10  justify-between  hidden md:flex">
-                {navLinks.map(
-                    (link) => {
-                        const isActive = pathName === link.href;
+                {navLinks.map((link) => {
+                    const isActive = pathName === link.href;
 
-                        return (
-                            <Link href={link.href} key={link.name}
+                    return (<Link href={link.href} key={link.name}
                                   className={isActive ? "font-bold" : ""}>
-                                {link.name}
-                            </Link>
-                        )
-                    }
-                )}
+                        {link.name}
+                    </Link>)
+                })}
             </div>
 
             {/*Actions */}
             <div className=" items-center gap-4 justify-between  hidden md:flex">
-                <Link href={"/public"}>
+                <Link href={"/"}>
                     <button className='text-2xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer'>
                         <IoIosNotificationsOutline/>
                     </button>
-                </Link> <Link href={"/public"}>
+                </Link> <Link href={"/"}>
                 <button className='text-2xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer'>
                     <CiSettings/>
 
@@ -68,12 +62,35 @@ const Header = () => {
             </div>
 
 
-
-
         </nav>
 
 
-    );
+        <aside
+            className={`
+    fixed top-12 right-0 
+    w-60 h-[calc(100vh)]
+    bg-stone-900
+    transition-transform duration-300
+    md:hidden
+    ${!isOpen ? "translate-x-full" : "-translate-x-0"}
+  `}
+        >
+            <div className="p-4 flex flex-col gap-4">
+                {navLinks.map((link) => {
+                    const isActive = pathName === link.href;
+
+                    return (<Link
+                        key={link.name}
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className={`p-2 rounded ${isActive ? "bg-stone-700 font-bold" : ""}`}
+                    >
+                        {link.name}
+                    </Link>);
+                })}
+            </div>
+        </aside>
+    </>);
 };
 
-export default Header;
+export default Navbar;
