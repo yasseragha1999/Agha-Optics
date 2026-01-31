@@ -23,7 +23,7 @@ const Navbar = () => {
 
 
             {/*Logo*/}
-            <Link href="/public"><span
+            <Link href="/"><span
                 className="font-bold text-xl italic bg-stone-700 py-2 px-4 rounded-2xl">Agha</span></Link>
 
             {/*Drawer*/}
@@ -68,7 +68,7 @@ const Navbar = () => {
         <aside
             className={`
     fixed top-12 right-0 
-    w-60 h-[calc(100vh)]
+    w-60 h-screen
     bg-stone-900
     transition-transform duration-300
     md:hidden
