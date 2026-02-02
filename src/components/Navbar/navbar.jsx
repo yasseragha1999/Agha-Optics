@@ -19,16 +19,16 @@ const Navbar = () => {
     console.log(pathName);
 
     return (<>
-        <nav className="w-full py-3 px-4 mx-auto  flex items-center bg-stone-900 justify-between ">
+        <nav className="w-full py-3 px-4 mx-auto  flex items-center bg-slate-900 justify-between ">
 
 
             {/*Logo*/}
             <Link href="/"><span
-                className="font-bold text-xl italic bg-stone-700 py-2 px-4 rounded-2xl">Agha</span></Link>
+                className="font-bold text-xl italic bg-slate-700 py-2 px-4 rounded-2xl">Agha</span></Link>
 
             {/*Drawer*/}
             <button
-                className="text-xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer md:hidden"
+                className="text-xl bg-slate-700 py-1 px-1 rounded-xl cursor-pointer md:hidden"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {isOpen ? <RiCloseLine/> : <CiMenuBurger/>}
@@ -50,11 +50,11 @@ const Navbar = () => {
             {/*Actions */}
             <div className=" items-center gap-4 justify-between  hidden md:flex">
                 <Link href={"/"}>
-                    <button className='text-2xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer'>
+                    <button className='text-2xl bg-slate-700 py-1 px-1 rounded-xl cursor-pointer'>
                         <IoIosNotificationsOutline/>
                     </button>
                 </Link> <Link href={"/"}>
-                <button className='text-2xl bg-stone-700 py-1 px-1 rounded-xl cursor-pointer'>
+                <button className='text-2xl bg-slate-700 py-1 px-1 rounded-xl cursor-pointer'>
                     <CiSettings/>
 
                 </button>
@@ -69,7 +69,7 @@ const Navbar = () => {
             className={`
     fixed top-12 right-0 
     w-60 h-screen
-    bg-stone-900
+    bg-slate-900
     transition-transform duration-300
     md:hidden
     ${!isOpen ? "translate-x-full" : "-translate-x-0"}
@@ -83,7 +83,7 @@ const Navbar = () => {
                         key={link.name}
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className={`p-2 rounded ${isActive ? "bg-stone-700 font-bold" : ""}`}
+                        className={`p-2 rounded ${isActive ? "bg-slate-700 font-bold" : ""}`}
                     >
                         {link.name}
                     </Link>);
