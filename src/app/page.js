@@ -31,7 +31,7 @@ export default function Home() {
 
 
                 <div
-                    className="grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-6  mx-auto bg-zinc-800 overflow-hidden  rounded-lg px-6 py-4 "
+                    className="grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-6  mx-auto bg-stone-800 overflow-hidden  rounded-lg px-6 py-4 "
                 >
 
 
@@ -42,7 +42,7 @@ export default function Home() {
                             <Link
                                 href={item.to}
                                 key={index}
-                                className="card w-full py-6 px-10 hover:-translate-y-2 transition duration-300 rounded-xl bg-zinc-500 flex flex-col justify-center items-center shadow-lg"
+                                className="card w-full py-6 px-10 hover:-translate-y-2 transition duration-300 rounded-xl bg-stone-600 flex flex-col justify-center items-center shadow-lg"
                             >
                                 <div className="card-body bg-white text-7xl p-4 rounded-3xl text-black mb-4">
                                     <Icon />
