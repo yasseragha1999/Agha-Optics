@@ -16,7 +16,6 @@ const navLinks = [{name: "Home", href: "/"}, {name: "Orders", href: "/orders"}, 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathName = usePathname();
-    console.log(pathName);
 
     return (<>
         <nav className="w-full py-3 px-4 mx-auto  flex items-center bg-slate-900 justify-between ">
