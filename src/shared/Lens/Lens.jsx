@@ -2,7 +2,7 @@
 const Lens = () => {
     return (
         <div>
-
+Lens
         </div>
     );
 };
