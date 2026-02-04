@@ -14,7 +14,7 @@ const Prescription = () => {
                 <div
                     className="col-span-12 grid grid-cols-12 gap-6 pb-3 rounded-b-md items-center  bg-white text-black">
                     <div className={"col-span-4"}></div>
-                    <div className={"col-span-8 grid grid-cols-4 space-x-2   my-2 pr-4"}>
+                    <div className={"col-span-8 grid grid-cols-5 space-x-2   my-2 pr-4"}>
                         <div
                             className={"bg-linear-to-r from-slate-700 to-slate-500 text-lg text-center text-white rounded-md"}>SPH
                         </div>
@@ -27,13 +27,16 @@ const Prescription = () => {
                         <div
                             className={"bg-linear-to-r from-slate-700 to-slate-500 text-lg text-center text-white rounded-md"}>ADD
                         </div>
+                        <div
+                            className={"bg-linear-to-r from-slate-700 to-slate-500 text-lg text-center text-white rounded-md"}>PD
+                        </div>
                     </div>
                     <div className={"col-span-4 flex items-center justify-center space-x-6 "}>
                         <FaEye className={"text-blue-500"}/>
                         <p className={"text-blue-500"}>R.E</p>
                         <FaExchangeAlt className={"text-orange-500"}/>
                     </div>
-                    <div className={"col-span-8 grid grid-cols-4 gap-4    pr-4"}>
+                    <div className={"col-span-8 grid grid-cols-5 gap-4    pr-4"}>
                         <input type="number" placeholder="0.00"
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
@@ -44,7 +47,9 @@ const Prescription = () => {
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
                         <input type="number" placeholder="0.00"
-
+                               className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
+                               required/>
+                        <input type="number" placeholder="0.00"
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
                     </div>
@@ -53,7 +58,7 @@ const Prescription = () => {
                         <p className={"text-red-500"}>L.E</p>
                         <FaExchangeAlt className={"text-orange-500"}/>
                     </div>
-                    <div className={"col-span-8 grid grid-cols-4 gap-4    pr-4"}>
+                    <div className={"col-span-8 grid grid-cols-5 gap-4    pr-4"}>
                         <input type="number" placeholder="0.00"
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
@@ -64,12 +69,12 @@ const Prescription = () => {
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
                         <input type="number" placeholder="0.00"
-
+                               className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
+                               required/>
+                        <input type="number" placeholder="0.00"
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
                     </div>
-
-
                 </div>
             </div>
         </section>
