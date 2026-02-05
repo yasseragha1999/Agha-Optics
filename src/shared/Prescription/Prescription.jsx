@@ -70,10 +70,10 @@ const Prescription = () => {
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
                         <button type="reset"
-                                className={"bg-red-500   md:text-lg text-center text-white rounded-md cursor-pointer"}>Reset
+                                className={"bg-red-500   rounded-md text-center outline-offset-2 outline cursor-pointer md:text-lg"}>Reset
                         </button>
                         <button type="submit"
-                                className={"bg-blue-500    md:text-lg text-center text-white rounded-md cursor-pointer"}>Submit
+                                className={"bg-blue-500    rounded-md text-center  outline-offset-2 outline cursor-pointer md:text-lg"}>Submit
                         </button>
 
                     </div>
