@@ -3,16 +3,16 @@ import {FaExchangeAlt, FaEye} from "react-icons/fa";
 
 const Prescription = () => {
     return (<>
-        <section className={"mb-6"}>
+        <section className={""}>
             <div className={"prescription grid grid-cols-12 "}>
                 <div
-                    className={" col-span-12 bg-linear-to-r from-slate-700 to-slate-500 rounded-t-2xl pl-6 py-2 flex items-center space-x-3 text-lg md:text-2xl font-black"}>
+                    className={" col-span-12 bg-linear-to-r from-slate-700 to-slate-500 rounded-t-2xl pl-6 pt-2 pb-4 flex items-center space-x-3 text-lg md:text-2xl font-black"}>
                     <BsEyeglasses/>
                     <span>Prescription</span>
                 </div>
 
                 <div
-                    className="col-span-12 grid grid-cols-12 gap-6 pb-3 rounded-b-md items-center  bg-white text-black">
+                    className="col-span-12 grid grid-cols-12 gap-6 pb-6  items-center  bg-white text-black">
                     <div className={"col-span-3"}></div>
                     <div className={"col-span-9 grid grid-cols-5 space-x-2   pt-4 pr-4"}>
                         <div

@@ -8,7 +8,7 @@ const Frame = () => {
             <section>
                 <div className={"frame grid grid-cols-12 "}>
                     <div
-                        className={" col-span-12 bg-linear-to-r from-slate-700 to-slate-500 rounded-t-2xl pl-6 py-2 flex items-center space-x-3 text-lg md:text-2xl font-black"}>
+                        className={" col-span-12 bg-linear-to-r from-slate-700 to-slate-500  pl-6 py-2 flex items-center space-x-3 text-lg md:text-2xl font-black"}>
                         <BsEyeglasses/>
                         <span>Frame</span>
                     </div>
