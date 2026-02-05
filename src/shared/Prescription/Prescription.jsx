@@ -69,6 +69,12 @@ const Prescription = () => {
                         <input type="number" placeholder="0.00"
                                className=" rounded-md text-center outline-offset-2 outline   md:text-lg placeholder-gray-500"
                                required/>
+                        <button type="reset"
+                                className={"bg-red-500   md:text-lg text-center text-white rounded-md cursor-pointer"}>Reset
+                        </button>
+                        <button type="submit"
+                                className={"bg-blue-500    md:text-lg text-center text-white rounded-md cursor-pointer"}>Submit
+                        </button>
 
                     </div>
                 </div>
