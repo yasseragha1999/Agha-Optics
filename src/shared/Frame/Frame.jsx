@@ -117,7 +117,7 @@ const Frame = () => {
                         {checkedSun && (
                             <div className="mt-2">
                                 <input
-                                    type="tel"
+                                    type="number"
                                     placeholder="Enter Price"
                                     className="w-full h-12 px-4 text-md text-gray-500 bg-gray-100 border rounded outline-none border-gray-500/30"
                                 />

@@ -25,7 +25,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-    padding-inline: 2rem;
-    padding-block: 1rem;
-}

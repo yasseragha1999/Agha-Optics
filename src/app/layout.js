@@ -24,7 +24,11 @@ export default function RootLayout({children}) {
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         <Navbar/>
-        {children}
+
+        <main className={"w-full px-6 py-4"}>
+            {children}
+        </main>
+
         </body>
         </html>
     );

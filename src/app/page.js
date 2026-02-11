@@ -23,8 +23,8 @@ export default function Home() {
         },
     ]
     return (<>
-            <div className={"container  "}>
-                <div className={"title flex items-center space-x-2 mb-2 "}>
+            <section>
+                <div className={"title flex items-center space-x-2 mb-4 "}>
                     <MdBorderColor className={"text-xl "}/>
                     <p className={"text-lg font-bold"}>New Order</p>
                 </div>
@@ -45,7 +45,7 @@ export default function Home() {
                                 className="card w-full py-6 px-10 hover:-translate-y-2 transition duration-300 rounded-xl bg-slate-600 flex flex-col justify-center items-center shadow-lg"
                             >
                                 <div className="card-body bg-white text-7xl p-4 rounded-3xl text-black mb-4">
-                                    <Icon />
+                                    <Icon/>
                                 </div>
 
                                 <p className="text-lg font-bold line-clamp-2">
@@ -54,12 +54,8 @@ export default function Home() {
                             </Link>
                         );
                     })}
-
-
-
                 </div>
-
-            </div>
+            </section>
         </>
     );
 }
