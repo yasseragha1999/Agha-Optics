@@ -1,7 +1,7 @@
 'use client'
-import { BsEyeglasses } from "react-icons/bs";
 import { useState } from "react";
 import { LuBookUp2 } from "react-icons/lu";
+import {RiGlasses2Fill} from "react-icons/ri";
 
 const Frame = () => {
     const [checked, setChecked] = useState(false);      // Self Frame
@@ -14,7 +14,7 @@ const Frame = () => {
 
                 {/* Header */}
                 <div className="col-span-12 bg-linear-to-r from-slate-700 to-slate-500 pl-6 py-2 flex items-center space-x-3 text-lg md:text-2xl font-black">
-                    <BsEyeglasses />
+                    <RiGlasses2Fill />
                     <span>Frame</span>
                 </div>
 

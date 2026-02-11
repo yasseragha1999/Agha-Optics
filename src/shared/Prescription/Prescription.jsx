@@ -1,5 +1,5 @@
-import {BsEyeglasses} from "react-icons/bs";
 import {FaExchangeAlt, FaEye} from "react-icons/fa";
+import {GiAbstract048} from "react-icons/gi";
 
 const Prescription = () => {
     return (<>
@@ -7,7 +7,7 @@ const Prescription = () => {
             <div className={"prescription grid grid-cols-12 "}>
                 <div
                     className={" col-span-12 bg-linear-to-r from-slate-700 to-slate-500 rounded-t-2xl pl-6 pt-2 pb-4 flex items-center space-x-3 text-lg md:text-2xl font-black"}>
-                    <BsEyeglasses/>
+                    <GiAbstract048 />
                     <span>Prescription</span>
                 </div>
 

@@ -1,6 +1,7 @@
 "use client";
 import Prescription from "@/shared/Prescription/Prescription";
 import Frame from "@/shared/Frame/Frame";
+import Lens from "@/shared/Lens/Lens";
 
 
 const Orders = () => {
@@ -12,6 +13,7 @@ const Orders = () => {
                 <div className={"w-fit bg-linear-to-l from-white to-slate-500 rounded-2xl"}>
                     <Prescription/>
                     <Frame/>
+                    <Lens/>
                 </div>
         </section>
     )
