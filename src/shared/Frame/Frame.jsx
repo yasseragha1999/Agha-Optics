@@ -21,8 +21,8 @@ const Frame = () => {
                 <div className="col-span-12 grid grid-cols-12 gap-6 p-3 rounded-b-md items-center bg-white text-black">
 
                     {/* Frame Checkbox */}
-                    <div className="col-span-12 pl-4 rounded-md flex items-center gap-3 text-lg py-2 mx-6 transition
-                        bg-linear-to-l from-slate-700 to-slate-500 text-black"
+                    <div className={`col-span-12 pl-4 rounded-md flex items-center gap-3 text-lg py-2 mx-6 transition
+                        ${checked ? "bg-blue-700 text-white" : "bg-linear-to-l from-slate-700 to-slate-500 text-black"}`}
                     >
                         <input
                             type="checkbox"
@@ -101,7 +101,7 @@ const Frame = () => {
 
                     {/* Sunglasses Checkbox with expandable Price input */}
                     <div className={`col-span-12 p-4 rounded-md flex flex-col gap-2 text-lg py-2 mx-6 transition
-    ${checkedSun ? "bg-linear-to-r from-slate-700 to-slate-500 text-white" : "bg-linear-to-l from-slate-700 to-slate-500 text-black"}`}>
+    ${checkedSun ? "bg-blue-700 text-white" : "bg-linear-to-l from-slate-700 to-slate-500 text-black"}`}>
 
                         <div className="flex items-center gap-3">
                             <input
