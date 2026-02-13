@@ -23,7 +23,8 @@ const Navbar = () => {
 
             {/*Logo*/}
             <Link href="/"><span
-                className="font-bold text-xl italic bg-slate-700 py-2 px-4 rounded-2xl">Agha</span></Link>
+                className="text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-blue-500
+                 font-black text-xl italic  px-4 ">Agha</span></Link>
 
             {/*Drawer*/}
             <button
