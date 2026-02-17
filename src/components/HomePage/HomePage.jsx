@@ -44,7 +44,7 @@ const HomePage = () => {
                     return (
                         <Link href={item.href} key={index}
                               className={` bg-linear-to-r  from-slate-700 to-slate-500 rounded-xl flex flex-col items-center gap-4 p-4
-                              hover:bg-linear-to-l  hover:from-slate-700 hover:to-slate-500 hover:scale-105
+                              hover:bg-linear-to-l  hover:from-slate-700 hover:to-slate-500 hover:scale-105 hover:transition-all duration-300
                               `}>
                             <Icon size={80}/>
                             <h6 className={"text-2xl font-bold"}>{item.name}</h6>
