@@ -36,12 +36,12 @@ const Navbar = () => {
 
 
             {/*links */}
-            <div className="items-center gap-10  justify-between  hidden md:flex">
+            <div className="items-center gap-12  justify-between  hidden md:flex">
                 {navLinks.map((link) => {
                     const isActive = pathName === link.href;
 
                     return (<Link href={link.href} key={link.name}
-                                  className={isActive ? "font-bold" : ""}>
+                                  className={isActive ? "font-extrabold" : ""}>
                         {link.name}
                     </Link>)
                 })}
