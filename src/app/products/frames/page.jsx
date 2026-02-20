@@ -1,8 +1,9 @@
+import AghaTable from "@/components/AghaTable/AghaTable";
 
 const Frames = () => {
     return (
         <div>
-            Frames
+            <AghaTable/>
         </div>
     );
 };

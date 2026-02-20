@@ -1,8 +1,9 @@
+import AghaTable from "@/components/AghaTable/AghaTable";
 
 const Lenses = () => {
     return (
         <div>
-            lenses
+            <AghaTable/>
         </div>
     );
 };
