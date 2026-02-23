@@ -26,7 +26,7 @@ export default function RootLayout({children}) {
         <Navbar/>
 
         <main className={"w-full px-6 py-4"}>
-            {children}
+                {children}
         </main>
 
         </body>
