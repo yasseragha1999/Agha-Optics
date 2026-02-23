@@ -1,4 +1,4 @@
-
+import AghaModal from "@/components/AghaModal/AghaModal";
 
 
 const AghaTable = () => {
@@ -16,8 +16,9 @@ const AghaTable = () => {
                             cursor-pointer  tracking-widest
                             `}>{textButton.toUpperCase()}
                     </button>
-
                 </div>
+
+                <AghaModal></AghaModal>
             </section>
         </>
     );
