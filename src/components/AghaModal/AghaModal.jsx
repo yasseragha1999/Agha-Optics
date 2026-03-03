@@ -36,7 +36,7 @@ const AghaModal = ({closeModal, onSave}) => {
                             type="text"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            className="rounded border border-gray-200 px-3 py-2 mt-2 w-full outline-blue-400"
+                            className="rounded border border-gray-200 px-3 py-2 mt-2 w-full outline outline-gray-300 focus:outline-blue-400"
                             placeholder="Frame name..."
                             required
                         />
@@ -55,7 +55,7 @@ const AghaModal = ({closeModal, onSave}) => {
                             type="number"
                             value={price}
                             onChange={(e) => setPrice(e.target.value)}
-                            className="rounded border border-gray-200 px-3 py-2 mt-2 w-full outline-blue-400"
+                            className="rounded border border-gray-200 px-3 py-2 mt-2 w-full outline outline-gray-300 focus:outline-blue-400"
                             placeholder="Price..."
                             required
                         />
