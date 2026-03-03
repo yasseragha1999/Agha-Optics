@@ -65,7 +65,7 @@ const AghaModal = ({closeModal, onSave}) => {
                         <button
                             type="button"
                             onClick={closeModal}
-                            className="px-4 py-2 max-w-fit bg-red-400 rounded hover:bg-red-500 cursor-pointer"
+                            className="px-4 py-2 min-w-fit bg-red-400 rounded hover:bg-red-500 cursor-pointer"
                         >
                             Cancel
                         </button>
