@@ -22,7 +22,7 @@ const AghaModal = ({closeModal, onSave}) => {
             <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
                 <form
                     onSubmit={handleSubmit}
-                    className="bg-white grid grid-cols-1 md:grid-cols-2 gap-6 shadow-lg rounded-lg px-6 py-6  w-1/2"
+                    className="bg-white grid grid-cols-1 md:grid-cols-2 gap-6 shadow-lg rounded-lg px-6 py-6  w-[60%]"
                 >
 
                     <div>
