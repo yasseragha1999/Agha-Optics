@@ -1,10 +1,18 @@
 'use client'
 import {LiaGlassesSolid} from "react-icons/lia";
 import {HiOutlineCurrencyDollar} from "react-icons/hi";
+import {useState} from "react";
 
-const FormModal = () => {
-    const  handleSubmit = ()=>{
+const FormModal = ({closeModal, onSave}) => {
+    const [frame, setFrame] = useState("");
+    const [price, setPrice] = useState("");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!name || !price) return;
 
+        onSave(price, frame);
+        closeModal();
+        console.log(frame , price)
     }
     return (
         <>
@@ -15,7 +23,7 @@ const FormModal = () => {
 
                 <div>
                     <div className="flex items-center gap-2">
-                        <LiaGlassesSolid className="w-6 h-6 text-gray-600" />
+                        <LiaGlassesSolid className="w-6 h-6 text-gray-600"/>
                         <label htmlFor="name" className="text-gray-600">
                             Frame Name
                         </label>
@@ -33,7 +41,7 @@ const FormModal = () => {
 
                 <div>
                     <div className="flex items-center gap-2">
-                        <HiOutlineCurrencyDollar className="w-6 h-6 text-gray-600" />
+                        <HiOutlineCurrencyDollar className="w-6 h-6 text-gray-600"/>
                         <label htmlFor="price" className="text-gray-600">
                             Price
                         </label>
