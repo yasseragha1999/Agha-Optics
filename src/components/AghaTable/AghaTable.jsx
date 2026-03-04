@@ -20,7 +20,13 @@ const AghaTable = () => {
                     </button>
                 </div>
                 {openModal && (
-                    <AghaModal closeModal={() => setOpenModal(false)}></AghaModal>
+                    <AghaModal
+                        closeModal={() => setOpenModal(false)}
+                        onSave={(data) => {
+                            console.log(data);
+                            setOpenModal(false);
+                        }}
+                    />
                 )}
             </section>
         </>
