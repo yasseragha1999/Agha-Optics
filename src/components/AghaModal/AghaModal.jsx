@@ -1,6 +1,5 @@
-'use client'
-import {LiaGlassesSolid} from "react-icons/lia";
-import {HiOutlineCurrencyDollar} from "react-icons/hi";
+
+
 import {useState} from "react";
 import FormModal from "@/components/AghaModal/FormModal";
 
